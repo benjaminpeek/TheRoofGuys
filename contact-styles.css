@@ -1,0 +1,288 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+/* contact form */
+.page-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 12px 12px 0 0;
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.08);
+	margin: auto 6vw 0 6vw;
+}
+
+.page-container > .contact-tagline {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	font-family: "Varela Round", sans-serif;
+	font-weight: 500;
+	text-decoration: underline;
+	text-decoration-color: #5cefff;
+}
+
+.page-container > .contact-tagline p {
+	font-size: 3.5rem;
+	color: #a6a6a6;
+}
+
+.page-container > .contact-grid-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.form {
+	margin-top: 15px;
+	width: 65vw;
+	max-width: 1248px;
+	padding-right: 10vw;
+	padding-left: 10vw;
+}
+
+.form > #contact-form {
+	width: 100%;
+}
+
+/* service select */
+.form > #contact-form > .service-select {
+	display: flex;
+	justify-content: space-between;
+	font-family: "Bitter", serif;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.form > #contact-form > .service-select > .service-selector input {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+.form > #contact-form > .service-select > .service-selector label {
+	font-size: 1.8rem;
+	font-weight: 500;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.form > #contact-form > .service-select > .service-selector input:checked + label {
+	opacity: 1;
+	font-weight: 600;
+}
+
+/* contact form */
+.form > #contact-form > .form-group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding-bottom: 3vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	overflow: hidden;
+}
+
+.form > #contact-form > .form-group > label {
+	font-family: "Bitter", serif;
+	font-weight: 500;
+}
+
+.form > #contact-form > .form-group > textarea:placeholder-shown {
+	font-size: 1.42em;
+}
+
+.form > #contact-form > .form-group input {
+	font-size: 1.5em;
+	font-family: "Bitter", serif;
+	font-weight: 400;
+	color: inherit;
+	padding: 1.5rem 2rem;
+	border-radius: 2px;
+	border: none;
+	border-bottom: 4px solid #00d8bb;
+	max-width: 100%;
+	width: 700px;
+	display: block;
+	transition: all 0.5s;
+}
+
+.form > #contact-form > .form-group input:focus {
+	outline: none;
+	border-bottom: 4px solid #5cefff;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
+	border-radius: 3px;
+}
+
+.form > #contact-form > .form-group textarea:focus {
+	outline: none;
+	border: 4px solid #5cefff;
+	border-radius: 6px;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
+}
+
+.form > #contact-form > .form-group textarea {
+	margin-top: 20px;
+	max-width: 100%;
+	width: 700px;
+	height: 250px;
+	border-radius: 3px;
+	border: 4px solid #00d8bb;
+	font-size: 1.5rem;
+	font-family: "Bitter", serif;
+	color: inherit;
+	padding: 1.5rem 2rem;
+	transition: all 0.5s;
+	resize: none;
+	outline: none;
+}
+
+.form > #contact-form > .form-group textarea:focus + label {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0.5rem);
+	outline: none;
+}
+
+.form > #contact-form > .form-group label {
+	margin-left: 2rem;
+	font-size: 1.25rem;
+	font-weight: 600;
+	display: block;
+	transition: all 0.5s;
+	color: #bababa;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.form > #contact-form > .form-group input:focus + label {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(1rem);
+}
+
+.form > #contact-form > .form-group input:focus::-webkit-input-placeholder,
+.form > #contact-form > .form-group textarea:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+/* contact page SEND button */
+#send-button {
+	background-color: #00d8bb;
+	color: white;
+	font-size: 1.8em;
+	padding: 10px 25px;
+	border: 1px solid #00d8bb;
+	border-radius: 4px;
+	outline: none;
+	transition: 0.3s;
+	margin-bottom: 20px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	width: 20vw;
+}
+
+#send-button:hover {
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	background-color: #5cefff;
+	border: 1px solid #5cefff;
+	cursor: pointer;
+}
+
+#send-button:active {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	background-color: #5cefff;
+	border: 1px solid #5cefff;
+	cursor: pointer;
+}
+
+.centered-button-wrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: -20px;
+}
+
+@media screen and (max-width: 1650px) {
+	.form {
+		width: 52vw;
+		min-width: 839px;
+	}
+
+	.form > #contact-form > .form-group input {
+		width: 90vw;
+	}
+
+	.form > #contact-form > .service-select > .service-selector {
+		margin: auto 10px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.form {
+		width: 100vw;
+		min-width: 20px;
+		margin: 0;
+	}
+
+	.form > #contact-form > .service-select > .service-selector {
+		margin: auto 5px;
+	}
+
+	.form > #contact-form > .service-select > .service-selector label {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 918px) {
+	.page-container {
+		margin-left: 0;
+		margin-right: 0;
+		box-shadow: none;
+		border-radius: none;
+	}
+
+	.form {
+		width: 100vw;
+	}
+
+	.form > #contact-form > .service-select {
+		flex-wrap: wrap;
+		row-gap: 25px;
+		width: 90%;
+	}
+
+	.form > #contact-form > .service-select > .service-selector {
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.form > #contact-form > .service-select {
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+
+	#send-button {
+		width: 40vw;
+	}
+}
+
+@media screen and (max-width: 532px) {
+	.form > #contact-form > .form-group input {
+		font-size: 4.7vw;
+	}
+}
+
+@media screen and (max-width: 398px) {
+	.page-container > .contact-tagline p {
+		font-size: 12vw;
+	}
+}

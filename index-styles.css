@@ -1,0 +1,409 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	max-width: 100%;
+}
+
+/* image */
+.index-main {
+	display: flex;
+	justify-content: center;
+	background-image: url(./TheRoofGuys_Images/DSC_0002_2_2.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: 2px solid #00d8bb;
+	position: relative;
+	overflow: hidden;
+}
+
+.index-main > .image-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 90vh;
+	margin-top: -2vh;
+	margin-bottom: 0.5vh;
+}
+
+.index-main > .image-content p {
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	width: 390px;
+	font-family: "Varela Round", sans-serif;
+	font-size: 5rem;
+	font-weight: 500;
+	color: white;
+}
+
+.index-main > .image-content > .btn-container {
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	background-color: #00d8bb;
+	border-radius: 10px;
+	margin-top: 8vh;
+	margin-right: 1vw;
+	margin-left: 30px;
+	transition: 0.3s;
+}
+
+.index-main > .image-content > .btn-container a {
+	color: white;
+	padding: 25px 20px;
+	font-size: 3rem;
+	transition: 0.3s;
+}
+
+.index-main > .image-content > .btn-container:hover {
+	background-color: #00ddf5;
+	transition: 0.2s;
+}
+
+@media screen and (max-width: 1920px) {
+	.index-main {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		height: 90vh;
+	}
+
+	.index-main > .image-content {
+		position: absolute;
+	}
+}
+
+@media screen and (max-width: 825px) {
+	.index-main > .image-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.index-main > .image-content p {
+		margin-bottom: -3vh;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.index-main > .image-content p {
+		font-size: 2.6rem;
+		width: 250px;
+	}
+
+	.index-main > .image-content > .btn-container a {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 285px) {
+	.index-main > .image-content p {
+		font-size: 2rem;
+		width: 150px;
+	}
+
+	.index-main > .image-content > .btn-container {
+		text-align: center;
+		margin-right: 20vw;
+	}
+
+	.index-main > .image-content > .btn-container a {
+		font-size: 1rem;
+	}
+}
+
+/* index body styles */
+.index-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	margin: 20px 5vw 0 5vw;
+	padding-top: 20px;
+	border-radius: 12px 12px 0 0;
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.08);
+	clip-path: inset(-60px -60px 0 -60px);
+}
+
+.index-body > .body-tagline {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	font-family: "Varela Round", sans-serif;
+	font-weight: 500;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.index-body > .body-tagline p {
+	font-size: 4rem;
+	letter-spacing: 1px;
+	color: #00d8bb;
+}
+
+.index-body > .body-reasons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+	line-height: 45px;
+	margin-bottom: 50px;
+}
+
+.index-body > .body-reasons > .reason {
+	flex: 1;
+	width: 340px;
+	margin: 35px;
+	margin-top: 0;
+	padding-top: 5px;
+}
+
+.index-body > .body-reasons > .reason i {
+	font-size: 5rem;
+	color: #00d1e8;
+	transition: 0.3s;
+}
+
+.index-body > .body-reasons > .reason i:hover {
+	cursor: default;
+	transition: 0.2s;
+	color: #00e6ff;
+	margin-top: -5px;
+}
+
+.index-body > .body-reasons > .reason p:nth-of-type(1) {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 1.6rem;
+	color: #00c3d9;
+}
+
+.index-body > .body-reasons > .reason p:nth-of-type(2) {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 1.2rem;
+	letter-spacing: 0.1px;
+	line-height: 30px;
+}
+
+@media screen and (max-width: 1165px) {
+	.index-body > .body-reasons > .reason i {
+		font-size: 4rem;
+	}
+
+	.index-body > .body-reasons > .reason p:nth-of-type(1) {
+		font-size: 1.3rem;
+	}
+
+	.index-body > .body-reasons > .reason p:nth-of-type(2) {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.index-body > .body-reasons > .reason i {
+		font-size: 3.5rem;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.index-body > .body-reasons {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.index-body > .body-tagline p {
+		font-size: 7vw;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.index-body > .body-reasons {
+		margin-right: 20px;
+	}
+
+	.index-body > .body-reasons > .reason {
+		width: 180px;
+	}
+
+	.index-body > .body-reasons > .reason i {
+		font-size: 3rem;
+	}
+
+	.index-body > .body-reasons > .reason p:nth-of-type(1) {
+		font-size: 1.1rem;
+	}
+
+	.index-body > .body-reasons > .reason p:nth-of-type(2) {
+		font-size: 0.8rem;
+	}
+}
+
+.index-body > .reviews-tagline {
+	font-family: "Varela Round", sans-serif;
+	margin-bottom: 60px;
+	margin-top: 5px;
+}
+
+.index-body > .reviews-tagline p {
+	font-size: 3rem;
+	color: #00d8bb;
+	font-weight: 500;
+}
+
+.index-body > .reviews {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+	line-height: 35px;
+	margin-bottom: 30px;
+}
+
+.index-body > .reviews > .review {
+	flex: 1;
+	width: 360px;
+	margin: 10px;
+	margin-top: 0;
+}
+
+.index-body > .reviews > .review h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 1.6rem;
+	color: #00c3d9;
+	letter-spacing: 1px;
+}
+
+.index-body > .reviews > .review h2 {
+	font-family: "Montserrat", sans-serif;
+	color: #00c3d9;
+	font-size: 1.1rem;
+}
+
+.index-body > .reviews > .review h3 {
+	font-family: "Montserrat", sans-serif;
+	color: black;
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.index-body > .call-to-action {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-family: "Bitter", serif;
+	font-weight: 400;
+	width: 500px;
+	margin-bottom: 120px;
+	margin-top: 30px;
+}
+
+.index-body > .call-to-action p {
+	color: black;
+	font-size: 1.6rem;
+	line-height: 42px;
+}
+
+.index-body > .call-to-action > p a {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: #00d8bb;
+	transition: 0.3s;
+}
+
+.index-body > .call-to-action > p a:hover {
+	color: #00c3d9;
+	font-size: 1.7rem;
+	transition: 0.3s;
+}
+
+@media screen and (max-width: 1165px) {
+	.index-body > .reviews-tagline p {
+		font-size: 2.6rem;
+	}
+
+	.index-body > .reviews > .review h1 {
+		font-size: 1.3rem;
+	}
+
+	.index-body > .reviews > .review h3 {
+		font-size: 1rem;
+		line-height: 26px;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.index-body > .reviews {
+		flex-direction: column;
+	}
+
+	.index-body > .reviews > .review:nth-of-type(2) {
+		margin-top: 10px;
+	}
+
+	.index-body > .reviews > .review:nth-of-type(3) {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+	.index-body > .call-to-action {
+		margin-top: 5px;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.index-body > .reviews-tagline p {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.index-body > .reviews-tagline p {
+		font-size: 5.5vw;
+	}
+
+	.index-body > .reviews > .review {
+		width: 50vw;
+	}
+
+	.index-body > .reviews > .review h1 {
+		font-size: 4.8vw;
+	}
+
+	.index-body > .reviews > .review h2 {
+		font-size: 4.4vw;
+	}
+
+	.index-body > .reviews > .review h3 {
+		font-size: 3.6vw;
+	}
+
+	.index-body > .call-to-action {
+		width: 60vw;
+	}
+
+	.index-body > .call-to-action p {
+		font-size: 4vw;
+	}
+
+	.index-body > .call-to-action > p a {
+		font-size: 4vw;
+	}
+
+	.index-body > .call-to-action > p a:hover {
+		font-size: 4.4vw;
+	}
+}
